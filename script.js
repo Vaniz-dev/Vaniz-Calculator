@@ -4,7 +4,11 @@ function clean(){
 
 function sub(){
     numero = document.getElementById("Result").innerHTML;
-    document.getElementById("Result").innerHTML = numero.substring(0, numero.length -1)
+    if(numero != "NADA ESCRITO" ){
+        if(numero != "Erro"){
+            document.getElementById("Result").innerHTML = numero.substring(0, numero.length -1) 
+        }
+    }
 }
 
 function insert(num){
@@ -30,5 +34,6 @@ function somar(){
         document.getElementById("Result").innerHTML = "Erro"
     }
 }
+
 
 
